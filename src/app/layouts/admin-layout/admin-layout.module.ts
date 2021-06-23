@@ -17,6 +17,11 @@ import {NivelComponent} from "../../pages/nivel/container/nivel/nivel.component"
 import {NivelNewComponent} from "../../pages/nivel/components/forms/nivel-new/nivel-new.component";
 import {NivelListComponent} from "../../pages/nivel/components/list/nivel-list/nivel-list.component";
 import {NivelsService} from "../../../providers/nivels/nivels.service";
+import { AlumnoComponent } from 'src/app/pages/alumno/container/alumno/alumno.component';
+import { AlumnoNewComponent } from 'src/app/pages/alumno/components/forms/alumno-new/alumno-new.component';
+import { AlumnoEditComponent } from 'src/app/pages/alumno/components/forms/alumno-edit/alumno-edit.component';
+import { AlumnoListComponent } from 'src/app/pages/alumno/components/list/alumno-list/alumno-list.component';
+import { AlumnoService } from 'src/providers/alumno/alumno.service';
 
 
 // import { ToastrModule } from 'ngx-toastr';
@@ -40,8 +45,12 @@ import {NivelsService} from "../../../providers/nivels/nivels.service";
     NivelComponent,
     NivelNewComponent,
     NivelListComponent,
+    AlumnoComponent,
+    AlumnoNewComponent,
+    AlumnoEditComponent,
+    AlumnoListComponent
     
-  ], providers: [NivelsService]
+  ], providers: [NivelsService, AlumnoService]
 })
 
 export class AdminLayoutModule {

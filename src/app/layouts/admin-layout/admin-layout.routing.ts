@@ -6,6 +6,7 @@ import { MapsComponent } from '../../pages/maps/maps.component';
 import { UserProfileComponent } from '../../pages/user-profile/user-profile.component';
 import { TablesComponent } from '../../pages/tables/tables.component';
 import {NivelComponent} from '../../pages/nivel/container/nivel/nivel.component';
+import { AlumnoComponent } from 'src/app/pages/alumno/container/alumno/alumno.component';
 
 export const AdminLayoutRoutes: Routes = [
     { path: 'dashboard',      component: DashboardComponent },
@@ -13,5 +14,6 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'tables',         component: TablesComponent },
     { path: 'icons',          component: IconsComponent },
     { path: 'maps',           component: MapsComponent },
-    {path: 'niveles',         component:NivelComponent}
+    {path: 'niveles',         component:NivelComponent},
+    {path: 'alumnos',         component:AlumnoComponent}
 ];
